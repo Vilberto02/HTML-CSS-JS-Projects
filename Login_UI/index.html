@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login - JuezCachimbo</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="form-container sign-up">
+        <form>
+          <h1>Juez Cachimbo</h1>
+          <span>Registrarte como:</span>
+          <div class="registro">
+            <button class="registro registro-usuario">Docente</button>
+            <button class="registro registro-usuario">Estudiante</button>
+          </div>
+        </form>
+      </div>
+      <div class="form-container sign-in">
+        <form>
+          <h1>Juez Cachimbo</h1>
+          <span>Inicia sesion con tu cuenta</span>
+          <input type="text" placeholder="Nombre de usuario" />
+          <input type="text" placeholder="Contraseña" />
+          <a href="#">Olvidaste tu contraseña?</a>
+          <button>Iniciar sesion</button>
+        </form>
+      </div>
+      <div class="toggle-container">
+        <div class="toggle">
+          <div class="toggle-panel toggle-left">
+            <h1>¡Bienvenido!</h1>
+            <p>
+              Ingrese sus datos personales para crear una cuenta en este sitio.
+            </p>
+            <button class="hidden" id="login">Iniciar sesion</button>
+          </div>
+          <div class="toggle-panel toggle-right">
+            <h1>Hola!</h1>
+            <p>
+              Regístrese con sus datos personales para utilizar las funciones
+              del sitio.
+            </p>
+            <button class="hidden" id="register">Registrate ahora</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
