@@ -1,0 +1,188 @@
+/*Poppins*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+/*Nunito Sans*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container-inicio {
+  background: var(--Bg-Dashboard, rgb(245, 246, 250));
+  display: flex;
+  padding: 36px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+}
+
+h2 {
+  color: var(--Black, #000);
+  font-family: "Nunito Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.container-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.header {
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  gap: 10px;
+}
+
+.container-body {
+  display: flex;
+  padding: 16px 64px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  flex: 1 0 0;
+}
+
+.container-recomended-text {
+  display: flex;
+  width: 1072px;
+  height: 300px;
+  padding: 0px 12px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.recomended-text {
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 14px;
+  background: url(images/christin-hume-k2Kcwkandwg-unsplash.jpg) lightgray 50% /
+    cover no-repeat;
+}
+
+.recomended-text h3 {
+  color: var(--0, rgb(255, 255, 255));
+  text-align: center;
+  font-family: "Nunito Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.056px;
+}
+
+.container-button {
+  display: flex;
+  width: 1072px;
+  height: 30px;
+  padding: 0px 12px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.container-button button {
+  color: var(--0, rgb(255, 255, 255));
+  display: flex;
+  padding: 8px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  border-radius: 8px;
+  background: var(--Azul-Turqueza, rgb(0, 60, 67));
+  padding: 10px 45px;
+  border: 1px solid transparent;
+  margin-top: 10px;
+  cursor: pointer;
+  text-align: center;
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.024px;
+}
+
+div.container-cards {
+  display: flex;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 12px;
+  align-self: stretch;
+  flex-wrap: wrap;
+  flex: 1 0 0;
+}
+
+div.container-cards div.cards {
+  display: flex;
+  padding: 32px;
+}
+
+div.cards section.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 14px;
+  max-height: 256px;
+  margin-left: 32px;
+}
+
+div.cards section.card:first-child {
+  padding-left: 0;
+}
+
+div.cards section.card .icon {
+  width: 64px;
+  height: 64px;
+}
+
+div.cards section.card img {
+  width: 100%;
+}
+
+div.cards section.card button {
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+  font: 80%;
+}
+
+div.cards section.card h3 {
+  font-size: 100%;
+  margin: 16px 0;
+}
+
+div.cards section.card span {
+  font-weight: 300;
+  max-width: 240px;
+  font-size: 80%;
+  margin-bottom: 16px;
+}

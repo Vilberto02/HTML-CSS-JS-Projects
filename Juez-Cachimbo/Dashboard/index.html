@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Dashboard Design</title>
+</head>
+<body>
+    <!--Sidebar-->
+    <div class="sidebar">
+        <a href="#" class="logo">
+            <img src="images/Logo-secundario.svg">
+            <div class="logo-name"><span>Juez</span>Cachimbo</div>
+        </a>
+        <ul class="side-menu">
+            <li class="active"><a href="#"><i class='bx bx-home-alt' ></i>Inicio</a></li>
+            <li><a href="#"><i class='bx bx-user'></i>Perfil</a></li>
+            <li><a href="#"><i class='bx bx-book-open'></i>Practicar</a></li>
+            <li><a href="#"><i class='bx bx-bar-chart'></i>Estadísticas</a></li>
+        </ul>
+        <ul class="logout">
+            <li>
+                <a href="#" class="logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    Cerrar Sesión
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--End of sidebar-->
+
+    <!-- Main content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu' ></i>
+            <form></form>
+            <input type="checkbox" id="theme-toggle" hidden>
+            <a href="#" class="profile">
+                <img src="images/default.png">
+            </a>
+            <div class="info">
+                <b>Nombre, Apellidos</b>
+                <p>Estudiante</p>
+            </div>
+            <i class='bx bx-chevron-down-circle'></i>
+        </nav>
+        <!-- End of navbar -->
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
