@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
+/*
+
+--- Colors ---
+Rich black: #0F141F
+Process cyan: #57BBE9
+Dim gray: #5F6167
+Anti-flash write: #EFF2F5
+
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -18,17 +28,27 @@ body {
 .sidebar-container {
   width: 240px;
   height: 100vh;
-  background: rgb(221, 169, 101);
-  padding: 16px;
+  background: rgb(15, 20, 31);
+  padding: 24px;
   border-radius: 0px 8px 8px 0px;
 }
 
-.sidebar-container .container-logo {
+.sidebar-container .container-header {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: left;
+  padding: 16px 0px 16px 0px;
+  width: 100%;
+  gap: 4px;
+}
+
+.container-header .container-logo {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 16px;
+  align-items: start;
+  justify-content: left;
+  padding: 4px;
 }
 
 .container-logo img {
@@ -36,38 +56,95 @@ body {
   height: 48px;
 }
 
-.sidebar-container .container-items {
+.container-header .container-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
+  justify-content: left;
+  align-items: start;
+  gap: 8px;
   padding: 4px;
 }
 
-.container-items button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 40px;
+.container-text h2 {
+  color: rgb(239, 242, 245);
+  font-size: 16px;
+  font-weight: 700;
 }
 
-.sidebar-container .container-footer {
-  margin-top: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 4px;
+.container-text span {
+  color: rgb(95, 97, 103);
+  font-size: 12px;
+  font-weight: 500;
 }
 
-.container-footer button {
+.sidebar-container .container-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 24px;
+}
+
+.container-body .overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: start;
+  width: 100%;
+  gap: 4px;
+}
+
+.overview button {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: start;
   width: 100%;
   height: 40px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  background: transparent;
+  color: rgb(239, 242, 245);
+  font-size: 14px;
+}
+
+.overview label {
+  color: rgb(95, 97, 103);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 4px 0px 4px 0px;
+}
+
+.container-body .account {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: start;
+  width: 100%;
+  gap: 4px;
+}
+
+.account button {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: start;
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  color: rgb(239, 242, 245);
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.account label {
+  color: rgb(95, 97, 103);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 4px 0px 4px 0px;
 }
