@@ -3,29 +3,166 @@
 * {
   margin: 0;
   padding: 0;
-  outline: 0;
-  overflow: hidden;
   box-sizing: border-box;
   font-family: Lexend, sans-serif;
 }
 
-html,
 body {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
+  background-color: rgb(245, 246, 250);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
 }
+
+.container {
+  display: flex;
+  width: 100 vw;
+  height: 100 vh;
+  padding: 36px 120px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.container .title {
+  display: flex;
+  height: 118px;
+  padding: 10px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  align-self: stretch;
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+}
+
+.title h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 0 0;
+  align-self: stretch;
+  color: rgb(0, 48, 80);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px; /* 208.333% */
+}
+
+.container .content {
+  display: flex;
+  height: 626px;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+.content .content-left {
+  display: flex;
+  padding: 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.content .content-right {
+  display: flex;
+  padding: 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.content-header {
+  display: flex;
+  height: 58px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+}
+
+.content-header h2 {
+  color: rgb(0, 48, 80);
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.content-body {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+  overflow: auto;
+}
+
+.container .buttons {
+  display: flex;
+  height: 57px;
+  padding: 8px 11px;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+.buttons button {
+  display: flex;
+  width: 191px;
+  padding: 10px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  outline: none;
+  border-radius: 10px;
+  color: rgb(0, 48, 80);
+  border: solid 1px rgb(0, 48, 80);
+  background: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgb(4, 81, 133);
+  color: rgb(255, 255, 255);
+}
+
 .container .zoom {
   width: 100%;
   height: 100%;
-  transform-origin: 0px 0px;
-  transform: scale(1) translate(0px 0px);
   cursor: pointer;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .zoom img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
   /*transition: 3s;*/
 }

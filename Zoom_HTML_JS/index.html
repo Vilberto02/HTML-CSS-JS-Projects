@@ -1,21 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="X-UA-Compatible" content="ie=edge" />
-    <meta
-      http-equiv="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <title>Red de estudiantes de la UNMSM</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Zoom</title>
   </head>
   <body>
     <div class="container">
-      <div class="zoom" id="zoom">
-        <img src="world.svg" alt="Mapa del mundo" />
+      <div class="title">
+        <h1>
+          Sistema de formación de comunidades o grupos multidisciplinarios en la
+          UNMSM basado en intereses académicos y profesionales
+        </h1>
+      </div>
+      <div class="content">
+        <div class="content-left">
+          <div class="content-header"></div>
+          <div class="content-body"></div>
+        </div>
+        <div class="content-right">
+          <div class="content-header"></div>
+          <div class="content-body">
+            <div class="container">
+              <div class="zoom" id="zoom">
+                <img src="world.svg" alt="Mapa del mundo" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button type="button" id="extraer-datos">Extracción de datos</button>
+        <button type="button" id="conjuntos">Conjuntos</button>
+        <button type="button" id="grafos">Grafos</button>
+        <button type="button" id="arbol">Árbol</button>
+        <button type="button" id="consulta">Consulta</button>
       </div>
     </div>
-    <script src="main.js"></script>
+    <script>
+      document
+        .getElementById("extraer-datos")
+        .addEventListener("click", function () {
+          window.location.href = "/";
+        });
+      document
+        .getElementById("conjuntos")
+        .addEventListener("click", function () {
+          window.location.href = "/conjunto";
+        });
+      document.getElementById("grafos").addEventListener("click", function () {
+        window.location.href = "/grafo";
+      });
+      document
+        .getElementById("consulta")
+        .addEventListener("click", function () {
+          window.location.href = "/consulta";
+        });
+      document.getElementById("arbol").addEventListener("click", function () {
+        window.location.href = "/arbol";
+      });
+    </script>
   </body>
 </html>

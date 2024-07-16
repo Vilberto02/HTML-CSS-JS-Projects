@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Responsive Navbar</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="navbar">
+        <div class="logo">
+          <a class="nav__logo" href="">
+            <img src="assets/logo.webp" />
+            <strong>Tuple</strong>
+          </a>
+        </div>
+        <ul class="nav__list">
+          <!-- LINKS -->
+          <li><a href="" class="nav__link">Pricing</a></li>
+          <li><a href="" class="nav__link">Learn</a></li>
+          <li><a href="" class="nav__link">Integrations</a></li>
+        </ul>
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li><a href="" class="nav__link">Download</a></li>
+            <li><a href="" class="nav__link">Log in</a></li>
+            <li><button type="button" class="action_btn">Sign up</button></li>
+          </ul>
+        </div>
+        <!--Boton menu-->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+
+      <div class="dropdown_menu open">
+        <ul class="dropdown__list">
+          <li><a href="">Pricing</a></li>
+          <li><a href="">Learn</a></li>
+          <li><a href="">Integrations</a></li>
+          <li><a href="">Download</a></li>
+          <li><a href="">Log in</a></li>
+          <li><button type="button" class="action_btn">Sign up</button></li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section page__one">
+        <h1 class="title">
+          The best remote pair programming <br />
+          app on macOS and Windows
+        </h1>
+        <p>
+          Built from the ground up to deliver razor sharp screen sharing, crisp
+          audio, and seamless <br />
+          remote control, so you can get into the flow with your teammates and
+          do real work.
+        </p>
+        <button type="button" class="start__btn">Start your free trial</button>
+        <small
+          ><strong>10 free calls.</strong> No time limit. No credit card
+          required</small
+        >
+        <div class="screen">
+          <img src="assets/screen.webp" />
+        </div>
+        <footer class="trusted-footer">
+          <h3>TRUSTED BY THOUSANDS OF TEAMS</h3>
+          <div class="container__sites">
+            <div class="list__sites">
+              <div class="item item1">Figma</div>
+              <div class="item item2">The new york times</div>
+              <div class="item item3">The browser company</div>
+              <div class="item item4">Soundcloud</div>
+              <div class="item item5">Vimeo</div>
+              <div class="item item6">codecademy</div>
+              <div class="item item7">thoughtbot</div>
+              <div class="item item8">shopify</div>
+              <div class="item item9">Github</div>
+              <div class="item item210">Stripe</div>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__logo">
+        <a href="" class="logo">
+          <img src="assets/logo.webp" alt="Logo-Tuple" />
+          Tuple
+        </a>
+        <div class="copyright">
+          <a href=""><i class="bx bxl-github"></i></a>
+          <a href=""><i class="bx bxl-twitter"></i></a>
+          <p>@ 2024 Tuple, LLC</p>
+        </div>
+      </div>
+      <div class="footer__list">
+        <ul class="footer__links links1">
+          <li>Product</li>
+          <li><a href="">Pricing</a></li>
+          <li><a href="">Download</a></li>
+          <li><a href="">Changelog</a></li>
+          <li><a href="">Docs</a></li>
+        </ul>
+        <div class="footer__list list2">
+          <ul class="footer__links links2">
+            <li>Company</li>
+            <li><a href="">Pairing guide</a></li>
+            <li><a href="">Podcast</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Jobs</a></li>
+          </ul>
+        </div>
+        <div class="footer__list list3">
+          <ul class="footer__links links3">
+            <li>Support</li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms of Service</a></li>
+            <li><a href="">Security</a></li>
+            <li><a href="">Contact us</a></li>
+            <li><a href="">Status</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const toggleBtn = document.querySelector(".nav__toggle");
+      const toggleBtnIcon = document.querySelector(".nav__toggle i");
+      const dropDownMenu = document.querySelector(".dropdown_menu");
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
+
+        toggleBtnIcon.classList = isOpen ? "bx bx-x-circle" : "bx bx-menu";
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  margin-top: 4.2rem;
+}
+
+/* ------------  NAV - NAVBAR ------------ */
+
+.header {
+  position: fixed; /*Mantiene la posicion fija.*/
+  width: 100%;
+  top: 0;
+  left: 0;
+  /*z-index: 100;*/
+  padding: 0.2rem;
+  background-color: white;
+  /*padding: 1.2rem 5%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between; /*Los elementos se desplazan de manera automatica en relacion al espacio entre elementos o contenedores*/
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo img {
+  width: 36px;
+  height: 36px;
+}
+
+.navbar .nav__list {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav__list a:hover {
+  color: blueviolet;
+}
+
+.navbar .nav__toggle {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.action_btn {
+  background-color: peru;
+  padding: 0.5rem 1rem;
+  border: none;
+  color: white;
+  font-size: 0.8rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.dropdown_menu {
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  width: 300px;
+  height: 0;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+  height: 240px;
+  /*z-index: 200;*/
+}
+
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 992px) {
+  .navbar .nav__list,
+  .navbar .action_btn {
+    display: none;
+  }
+
+  .navbar .nav__toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
+  }
+}
+
+/*
+.nav {
+  position: relative;
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__close,
+.nav__toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav__logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /*gap: 1.5rem;*/
+/*}
+
+/*.header .logo {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  gap: 0.3rem;
+}*/
+/*
+.nav__logo img {
+  width: 36px;
+  height: 36px;
+}
+
+@media screen and (max-width: 1150px) {
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: white;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    width: 80%;
+    height: 100%;
+    padding: 7rem 3rem;
+    transition: right 0.4s;
+  }
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
+.nav__link {
+  position: relative;
+  color: black;
+  font-weight: 500;
+  transition: color 0.4s;
+}
+
+.nav__close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+}
+
+.show-menu {
+  right: 0;
+}
+
+.header .options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 16px;
+}
+
+.options a {
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.options a:hover {
+  background-color: rgba(241, 241, 241, 0.815);
+}
+
+.options button {
+  background-color: white;
+  outline: none;
+  border-radius: 6px;
+  border: solid 1px rgb(199, 199, 199);
+  cursor: pointer;
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.icons {
+  font-size: 1.8rem;
+  display: none;
+  cursor: pointer;
+}*/
+
+/* ------------  MAIN - SECTIONS ------------ */
+/*.main-class {
+  margin: 2.8rem 0px;
+  width: 100%;
+}
+
+.main-class .presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.8rem;
+  padding: 2.6rem 4.6rem;
+}
+
+.presentation h1 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 58px;
+  text-align: center;
+  color: rgb(39, 39, 42);
+  margin: 0 108px;
+}
+
+.presentation p {
+  text-align: center;
+  color: rgb(113, 113, 122);
+  line-height: 29px;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0 108px;
+}
+
+.presentation button {
+  background-color: rgb(106, 94, 217);
+  outline: none;
+  padding: 20px 36px;
+  border-radius: 16px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.presentation small {
+  color: rgb(113, 113, 122);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.presentation strong {
+  font-weight: 600;
+  color: rgb(39, 39, 42);
+}
+
+.presentation .screen {
+  box-shadow: 0px 0px 28px 12px rgba(89, 89, 90, 0.2);
+  border-radius: 8px;
+  padding: 8px 4px;
+  background-color: rgb(245, 245, 246);
+  width: 100%;
+  margin: 0px 64px;
+}
+
+.screen img {
+  border-radius: 4px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.list-pages ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 12px;
+}
+
+.trusted-footer h3 {
+  font-size: 16px;
+  color: rgb(161, 161, 170);
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+}*/
