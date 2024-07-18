@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@300,400,500,600,700,1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Abstract</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo__help">
+          <a href="" class="logo">
+            <img src="Assets/abstract-logo.svg" alt="abstract" />
+            Abstract
+          </a>
+          |
+          <a href="" class="help">Help center</a>
+        </div>
+        <div class="buttons">
+          <button type="button" class="submit__btn">Submit a request</button>
+          <button type="button" class="signin__btn">Sign in</button>
+        </div>
+        <div class="menu open">
+          <div class="search__icon">
+            <i class="bx bx-search" onclick="searchFunction()"></i>
+          </div>
+          <div class="menu__icon">
+            <i class="bx bx-menu" id="menu"></i>
+          </div>
+        </div>
+      </nav>
+      <div class="dropdown" id="dropdown">
+        <a href="">Submit a request</a>
+        <a href="">Sign in</a>
+      </div>
+      <div class="container__search">
+        <input type="text" placeholder="Search" />
+        <i class="bx bx-x" onclick="closeSearch()"></i>
+      </div>
+    </header>
+    <main class="main"></main>
+    <footer class="footer"></footer>
+    <script src="main.js"></script>
+  </body>
+</html>
