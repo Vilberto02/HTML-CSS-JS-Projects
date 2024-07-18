@@ -1,33 +1,42 @@
-const toggleMenuBtn = document.querySelector(".menu__icon");
-const toggleBtnIcon = document.querySelector(".menu__icon i");
-const dropDownMenu = document.querySelector(".dropdown");
+/*---------------------------------------------------------------- SEARCH - EVENT LISTENER */
 
-toggleMenuBtn.addEventListener("click", dropDownFunction);
+const searchCloseBtn = document.getElementById("close-search");
+const searchBtn = document.getElementById("search-icon");
 
-function dropDownFunction() {
-  const isOpen = dropDownMenu.classList.toggle("open");
+searchCloseBtn.addEventListener("click", closeSearch);
+searchBtn.addEventListener("click", searchFunction);
 
-  toggleBtnIcon.classList = isOpen ? "bx bx-x" : "bx bx-menu";
-
-  dropDownMenu.style.height = isOpen ? "200px" : "0px";
-  dropDownMenu.style.display = isOpen ? "flex" : "none";
-}
-
-/*TOGGLE BUSQUEDA*/
+/*---------------------------------------------------------------- SEARCH - HANDLE EVENT*/
 
 function searchFunction() {
   let searchMenu = document.querySelector(".container__search");
   searchMenu.style.display = "none";
 
   if (searchMenu.style.display == "none") {
-    searchMenu.style.display = "flex";
+    searchMenu.style.display = "block";
   }
 }
 
 function closeSearch() {
   let searchMenu = document.querySelector(".container__search");
-  searchMenu.style.display = "flex";
-  if (searchMenu.style.display == "flex") {
+  searchMenu.style.display = "block";
+  if (searchMenu.style.display == "block") {
     searchMenu.style.display = "none";
   }
+}
+
+/*---------------------------------------------------------------- DROPDOWN - EVENT LISTENER */
+
+const toggleMenuBtn = document.querySelector(".menu__icon");
+const toggleBtnIcon = document.querySelector(".menu__icon i");
+const dropDownMenu = document.querySelector(".dropdown__menu");
+
+toggleMenuBtn.addEventListener("click", dropDownFunction);
+
+/*---------------------------------------------------------------- DROPDOWN - HANDLE LISTENER */
+
+function dropDownFunction() {
+  const isOpen = dropDownMenu.classList.toggle("open");
+
+  toggleBtnIcon.classList = isOpen ? "bx bx-x" : "bx bx-menu";
 }

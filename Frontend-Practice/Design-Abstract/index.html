@@ -31,22 +31,26 @@
           <button type="button" class="submit__btn">Submit a request</button>
           <button type="button" class="signin__btn">Sign in</button>
         </div>
-        <div class="menu open">
+        <div class="menu">
           <div class="search__icon">
-            <i class="bx bx-search" onclick="searchFunction()"></i>
+            <i class="bx bx-search" id="search-icon"></i>
           </div>
           <div class="menu__icon">
-            <i class="bx bx-menu" id="menu"></i>
+            <i class="bx bx-menu" id="menu-icon"></i>
           </div>
         </div>
       </nav>
-      <div class="dropdown" id="dropdown">
-        <a href="">Submit a request</a>
-        <a href="">Sign in</a>
+      <div class="dropdown__menu" id="dropdown">
+        <div class="dropdown__items">
+          <a href="">Submit a request</a>
+          <a href="">Sign in</a>
+        </div>
       </div>
       <div class="container__search">
-        <input type="text" placeholder="Search" />
-        <i class="bx bx-x" onclick="closeSearch()"></i>
+        <div class="search">
+          <input type="text" placeholder="Search" />
+          <i class="bx bx-x" id="close-search"></i>
+        </div>
       </div>
     </header>
     <main class="main"></main>
