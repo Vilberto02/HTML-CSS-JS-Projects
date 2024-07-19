@@ -229,5 +229,47 @@ body {
 }
 
 /*---------------------------------------------------------------- MAIN*/
+.main {
+  margin-top: 86px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .main__search {
+  background-color: var(--color-secondary);
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.main__search h1 {
+  font-size: 80px;
+  font-weight: 500;
+}
+
+.main__search .input__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.input__icon input {
+  width: 720px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.8rem;
+}
+
+.input__icon i {
+  font-size: 1.8rem;
+}
 
 /*---------------------------------------------------------------- FOOTER*/
