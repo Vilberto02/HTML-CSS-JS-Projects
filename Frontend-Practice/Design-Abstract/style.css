@@ -1,8 +1,7 @@
-/*@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 * {
-  /*font-family: Inter, sans-serif;*/
-  font-family: "General Sans", sans-serif;
+  font-family: Inter, sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -228,13 +227,14 @@ body {
   }
 }
 
-/*---------------------------------------------------------------- MAIN*/
+/*---------------------------------------------------------------- MAIN - SEARCH*/
 .main {
   margin-top: 86px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .main .main__search {
@@ -266,10 +266,92 @@ body {
   font-size: 20px;
   font-weight: 500;
   padding: 0.8rem;
+  outline: none;
+  border: 1px solid;
+  border-color: var(--color-text);
+  border-radius: 4px;
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
+.input__icon input:hover,
+input:focus {
+  border-color: var(--color-primary);
+}
 .input__icon i {
   font-size: 1.8rem;
+  cursor: pointer;
 }
 
+.input__icon i:hover {
+  color: var(--color-primary);
+}
+
+@media screen and (max-width: 768px) {
+  .main__search h1 {
+    font-size: 64px;
+  }
+
+  .input__icon {
+    padding: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main__search h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+}
+
+/*---------------------------------------------------------------- MAIN - OPTIONS*/
+.main .main__options {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 24rem), 1fr));
+  grid-auto-rows: 12rem;
+  gap: 3rem;
+  margin: 80px 5rem 20px;
+  padding: 1.5rem;
+}
+
+.card {
+  display: flex;
+  gap: 1.8rem;
+}
+
+.card img {
+  height: 40%;
+  width: 10%;
+  margin-top: 0.3rem;
+}
+
+.card .text__card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.text__card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.text__card p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.text__card .learn__more {
+  color: var(--color-primary);
+  display: flex;
+  align-items: first baseline;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.learn__more:hover {
+  text-decoration: underline;
+}
 /*---------------------------------------------------------------- FOOTER*/
