@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
+
+:root {
+  /*--------------------------------------------- Colors*/
+  --body-color: rgb(245, 245, 245);
+  --text-color: rgb(31, 31, 31);
+
+  /*--------------------------------------------- Font and typography*/
+  --body-font: "Inter", sans-serif;
+  --loading-font-size: 2rem;
+}
+
+/*--------------------------------------------- LOADING*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  /*display: grid;
+  place-items: center;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--body-color);
+  overflow: hidden;
+}
+
+.loading {
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--loading-font-size);
+}
+
+.loading__dots {
+  display: inline-flex;
+  column-gap: 0.25rem;
+}
+
+.loading__dot {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  background-color: var(--text-color);
+  border-radius: 50%;
+}
+
+.loading__dot:nth-child(1) {
+  position: absolute;
+  transform: scale(0);
+}
+
+.loading__dot:nth-child(4) {
+  background: transparent;
+}
+
+.loading__dot-down {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--text-color);
+  border-radius: 50%;
+  transform: translate(0);
+}
+
+/* Add animated class */
+
+.animate .loading__dot:nth-child(1) {
+  animation: scale-dot 0.8s 0.2s forwards; /* Simula que el primer punto aparezca*/
+}
+
+.animate .loading__dot:nth-child(2),
+.animate .loading__dot:nth-child(3) {
+  animation: move-right 0.6s forwards; /*Mueve los puntos hacia la derecha*/
+}
+
+.animate .loading__dot-down {
+  animation: move-right-down 0.8s 0.2s forwards linear,
+    move-down 2.8s 0.3s forwards ease-in;
+}
+
+/* Animated dot 1 */
+
+@keyframes scale-dot {
+  100% {
+    /*Estado final de la animacion*/
+    transform: scale(1); /*Aparece el punto*/
+  }
+}
+
+/* Animated dot 2 & 3*/
+
+@keyframes move-right {
+  100% {
+    transform: translateX(
+      0.75rem
+    ); /*Translada los puntos horizontalmente 0.75rem hacia la derecha*/
+  }
+}
+
+/* Animated dot 4 */
+
+@keyframes move-right-down {
+  50% {
+    /*Estado intermedio*/
+    transform: translate(
+      1.5rem,
+      0.25rem
+    ); /* (derecha, abajo) Mueve el punto hacia abajo y a la derecha en el 50% del tiempo de la animacion*/
+  }
+
+  100% {
+    transform: translate(
+      2rem,
+      0.5rem
+    ); /*Mueve el punto hacia la derecha y abajo al final de la animacion*/
+  }
+}
+
+@keyframes move-down {
+  100% {
+    transform: translate(
+      10rem,
+      80vh
+    ); /*Hace que el punto desaparezca fuera de la vista*/
+  }
+}

@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+:root {
+  --color-frame: rgb(38, 38, 39);
+  --color-white: rgb(255, 255, 255);
+  --color-sean-green: rgb(10, 135, 84);
+  --color-poppy: rgb(223, 41, 53);
+  --color-gray-02: rgb(55, 55, 54);
+  --color-bg: rgb(29, 28, 29);
+  --color-gray-01: rgb(51, 51, 50);
+  --color-card: rgb(43, 42, 43);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-bg);
+  color: var(--color-white);
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  padding: 0.8rem;
+  height: 100%;
+}
+
+.main .sidebar {
+  background-color: var(--color-frame);
+  border-radius: 12px;
+  width: 15rem;
+  color: var(--color-white);
+}
+
+.main .content {
+  margin-left: 0.8rem;
+  background-color: var(--color-frame);
+  width: 100%;
+  border-radius: 12px;
+  padding: 1.2rem;
+}
+
+.content .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.title a {
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.content .container__cards {
+  background-color: var(--color-bg);
+  height: auto;
+  border-radius: 12px;
+  margin-top: 1.2rem;
+  padding: 0.8rem;
+  overflow-y: auto;
+}
+
+.container__cards .card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+  background-color: var(--color-card);
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.card:last-child {
+  margin-bottom: 0;
+}
+
+.card .date__btn {
+  display: flex;
+  justify-content: space-between;
+}
