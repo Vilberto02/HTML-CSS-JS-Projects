@@ -37,6 +37,52 @@ body {
   border-radius: 12px;
   width: 15rem;
   color: var(--color-white);
+  padding: 1.2rem 0.8rem;
+}
+
+.header a {
+  display: flex;
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+
+.header img {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.2rem;
+}
+
+.header {
+  margin-bottom: 2.5rem;
+}
+
+.navigation a {
+  color: var(--color-white);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.navigation a:hover {
+  opacity: 0.7;
+}
+
+.navigation li {
+  margin-bottom: 0.8rem;
+}
+
+.navigation li:last-child {
+  margin-bottom: 0;
+}
+
+.navigation .icon__navigation {
+  width: 28px;
+  height: 28px;
+  margin-right: 0.3rem;
 }
 
 .main .content {
@@ -77,17 +123,41 @@ body {
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
   background-color: var(--color-card);
   padding: 0.5rem;
   border-radius: 8px;
+}
+
+.description {
+  margin: 0.5rem 0px 0.5rem;
 }
 
 .card:last-child {
   margin-bottom: 0;
 }
 
+.card h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title__important {
+  width: 28px;
+  height: 28px;
+}
+
 .card .date__btn {
   display: flex;
   justify-content: space-between;
+}
+
+.date__btn button {
+  padding: 0.3rem 0.5rem;
+  outline: none;
+  border-radius: 8px;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 500;
 }
