@@ -11,21 +11,21 @@
     <title>Weather App</title>
   </head>
   <body>
-    <div class="card__container">
-      <div class="card">
-        <div class="search">
+    <main class="card__container">
+      <section class="card">
+        <header class="search">
           <input type="text" placeholder="Enter city name" />
           <button class="icon">
             <i class="bx bx-search"></i>
           </button>
-        </div>
+        </header>
         <div class="content">
           <img src="Assets/weather.svg" alt="icon" class="icon__img" />
           <h1 class="temperature">8 °C</h1>
           <p class="city">New York</p>
           <strong class="country">US</strong>
         </div>
-        <div class="options">
+        <footer class="options">
           <div class="item">
             <i class="bx bx-water"></i>
             <div class="text">
@@ -40,9 +40,9 @@
               <p>Wind Speed</p>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
+        </footer>
+      </section>
+    </main>
     <script src="main.js"></script>
   </body>
 </html>
