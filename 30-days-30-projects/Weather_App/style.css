@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: rgb(34, 34, 34);
+}
+
+.card__container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  border: none;
+  border-radius: 16px;
+  width: 500px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  justify-content: space-between;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.search input {
+  height: 100%;
+  width: 80%;
+  padding: 1rem 1.5rem;
+  outline: none;
+  border-radius: 30px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-right: 0.8rem;
+  color: #555;
+  background-color: #ebfffc;
+}
+
+.search input:focus {
+  outline: 2px solid #5b548a;
+  box-shadow: 9px 9px 50px -11px #5b548a;
+}
+
+.search .icon {
+  background-color: white;
+  height: 100%;
+  border-radius: 50%;
+  padding: 1rem 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+}
+
+.icon i {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.8rem;
+}
+
+.icon__img {
+  width: 200px;
+  height: 200px;
+}
+
+.content h1 {
+  margin: 1.2rem 0px 1.2rem;
+  font-size: 72px;
+  color: white;
+}
+
+.content p {
+  font-size: 48px;
+  color: white;
+}
+
+.content .country {
+  color: white;
+  margin-top: 0.3rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+}
+
+.options {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+.options .item {
+  display: flex;
+}
+
+.item .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.text h3 {
+  font-size: 24px;
+  color: white;
+}
+
+.text p {
+  font-size: 16px;
+  color: white;
+}
+
+.item i {
+  font-size: 3rem;
+  margin-right: 0.5rem;
+  color: white;
+}
