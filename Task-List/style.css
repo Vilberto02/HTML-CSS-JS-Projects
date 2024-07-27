@@ -113,51 +113,53 @@ body {
 .content .container__cards {
   background-color: var(--color-bg);
   height: auto;
+  width: 100%;
   border-radius: 12px;
   margin-top: 1.2rem;
   padding: 0.8rem;
   overflow-y: auto;
 }
 
-.container__cards .card {
+.container__cards .item__card {
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.5rem;
   background-color: var(--color-card);
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 2.3rem;
   border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  justify-content: space-between;
+  position: relative;
 }
 
-.description {
-  margin: 0.5rem 0px 0.5rem;
-}
-
-.card:last-child {
+.container__cards .item__card:last-child {
   margin-bottom: 0;
 }
 
-.card h3 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.container__cards .item__card:hover {
+  background-color: var(--color-gray-02);
 }
 
-.title__important {
-  width: 28px;
+.item__card::before {
+  content: "";
   height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  position: absolute;
+  background-image: url("Assets/unchecked.svg");
+  background-size: cover;
+  background-position: center;
+  top: 4px;
+  left: 0.3rem;
 }
 
-.card .date__btn {
-  display: flex;
-  justify-content: space-between;
+.container__cards .item__card.checked {
+  text-decoration: line-through;
+  color: #555;
 }
 
-.date__btn button {
-  padding: 0.3rem 0.5rem;
-  outline: none;
-  border-radius: 8px;
-  border: none;
-  font-size: 0.8rem;
-  font-weight: 500;
+.container__cards .item__card.checked::before {
+  background-image: url("Assets/checked.svg");
 }

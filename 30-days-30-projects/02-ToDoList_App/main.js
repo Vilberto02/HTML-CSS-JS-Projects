@@ -49,6 +49,23 @@ listContainer.addEventListener(
 );
 
 /*El false indica que el elemento debe de ser manejado en la fase burbuja */
+/*
+
+<html>
+  <body>
+    <div id="parent">
+      <button id="child">Click me</button>
+    </div>
+  </body>
+</html>
+
+- fase captura: html -> body -> div#parent -> button#child
+- fase objetivo: button#child (el evento es manejado aquí si hay event listeners registrados directamente en el botón)
+- fase burbuja: button#child -> div#parent -> body -> html
+
+
+false como 3er argumento, especifica que el listener debe ejecutarse en la fase de burbuja, es decir, el listener se ejecutará cuando el evento esté burbujeando (propagacion de eventos en la fase burbuja) hacia arriba desde el elemento objetivo hasta el elemento raíz del DOM.
+*/
 
 function saveData() {
   localStorage.setItem(

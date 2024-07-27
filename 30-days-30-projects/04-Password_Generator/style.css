@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #002339;
+  overflow: hidden;
+}
+
+.main {
+  margin: 12%;
+  width: 90%;
+  max-width: 700px;
+  color: white;
+}
+
+.app h1 span {
+  color: #019f55;
+  padding-bottom: 1.2rem;
+  border-bottom: 2px solid #019f55;
+}
+
+.display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  background: white;
+  color: #333;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  padding: 0.8rem;
+}
+
+.display input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding-left: 0.3rem;
+}
+
+.copy {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.generate {
+  background-color: #019f55;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.ray {
+  width: 28px;
+  height: 28px;
+  margin-right: 0.4rem;
+}
