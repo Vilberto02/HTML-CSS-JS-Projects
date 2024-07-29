@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #88abff;
+}
+
+.wrapper {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 265px);
+  gap: 1.2rem;
+}
+
+.wrapper li {
+  background-color: #fff;
+  border: none;
+  list-style: none;
+  height: 250px;
+  border-radius: 4px;
+  padding: 1.2rem 1.5rem 1.5rem;
+}
+
+.add__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.add__icon {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #88abff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.add__icon i {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #88abff;
+}
+
+.info__add {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #88abff;
+  margin-top: 1.5rem;
+}
+
+.note {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.details h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.details p {
+  margin-top: 0.8rem;
+  color: #575757;
+  font-size: 0.9rem;
+  display: block;
+}
+
+.bottom__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ccc;
+  padding-top: 0.6rem;
+  color: #6d6d6d;
+}
+
+.bottom__content p {
+  font-size: 0.85rem;
+}
+
+.settings {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+}
+
+.settings .menu {
+  position: absolute;
+  bottom: 0;
+  right: -5px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  border-radius: 4px;
+  transform: scale(0);
+  transform-origin: bottom right;
+  transition: transform 0.2s ease-in-out;
+}
+
+.settings:hover .menu {
+  transform: scale(1);
+}
+
+.menu li {
+  height: 25px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+  cursor: pointer;
+  border-radius: 4px 4px 0 0;
+}
+
+.menu li:hover {
+  background-color: #f5f5f5;
+}
+
+.menu li:last-child {
+  border-radius: 0 0 4px 4px;
+}
+
+.menu li i {
+  padding-right: 0.5rem;
+}
+
+.popup__box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+.popup__box .popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 400px;
+  z-index: 3;
+}
+
+.popup .content {
+  border-radius: 4px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.content header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.content header i {
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.content form {
+  margin: 0.8rem 0.6rem;
+}
+
+.content form :where(input, textarea) {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #999;
+  outline: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.description textarea {
+  height: 100px;
+  resize: none;
+}
+
+.content form button {
+  width: 100%;
+  cursor: pointer;
+  padding: 0.5rem 0.8rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
