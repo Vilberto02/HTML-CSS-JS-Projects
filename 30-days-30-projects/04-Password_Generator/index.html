@@ -4,9 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <title>Password Generator</title>
   </head>
   <body>
+    <!--<i class='bx bx-x'></i>-->
     <main class="main">
       <div class="app">
         <h1>Generador de <br /><span>Contraseñas aleatorias</span></h1>
@@ -14,28 +19,40 @@
           <div class="amount">
             <h2 class="title__options">Cantidad de palabras</h2>
             <div class="amount__buttons">
-              <button class="amount__less">Menos</button>
+              <button class="amount__less"><i class="bx bx-minus"></i></button>
               <input type="text" value="12" readonly id="input-box" />
-              <button class="amount__more">Mas</button>
+              <button class="amount__more"><i class="bx bx-plus"></i></button>
             </div>
           </div>
           <div class="option uppercase">
             <h2 class="title__options">Mayusculas</h2>
-            <button class="btn" id="uppercase-btn">Si</button>
+            <button class="btn" id="uppercase-btn">
+              <i class="bx bx-check"></i>
+            </button>
           </div>
           <div class="option numbers">
             <h2 class="title__options">Numeros</h2>
-            <button class="btn" id="numbers-btn">Si</button>
+            <button class="btn" id="numbers-btn">
+              <i class="bx bx-check"></i>
+            </button>
           </div>
           <div class="option symbols">
             <h2 class="title__options">Simbolos</h2>
-            <button class="btn" id="symbols-btn">Si</button>
+            <button class="btn" id="symbols-btn">
+              <i class="bx bx-check"></i>
+            </button>
           </div>
         </div>
         <div class="display">
-          <input type="text" id="input-generate" placeholder="Contraseña" />
+          <input
+            type="text"
+            id="input-generate"
+            placeholder="Contraseña"
+            readonly
+          />
           <img src="Assets/copy.svg" class="copy" />
         </div>
+
         <button class="generate">
           <img src="Assets/ray.svg" class="ray" /> Generar
         </button>
