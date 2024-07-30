@@ -176,7 +176,7 @@ body {
 }
 
 .content form {
-  margin: 0.8rem 0.6rem;
+  padding: 1rem;
 }
 
 .content form :where(input, textarea) {
@@ -186,10 +186,11 @@ body {
   outline: none;
   padding: 0.5rem;
   font-size: 1rem;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
 }
 
 .description textarea {
-  height: 100px;
+  height: 150px;
   resize: none;
 }
 
@@ -198,5 +199,37 @@ body {
   cursor: pointer;
   padding: 0.5rem 0.8rem;
   font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+  background: #6a93f8;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  margin-top: 1.2rem;
+}
+
+.content .row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  line-height: 1.5rem;
+}
+
+.content .row label {
   font-weight: 500;
+}
+
+.content .description {
+  padding-top: 0.8rem;
+}
+
+.popup__box,
+.popup__box .popup {
+  display: none;
+  transition: all 0.2s ease;
+}
+
+.popup__box .show,
+.popup__box .popup {
+  display: block;
 }

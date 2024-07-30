@@ -14,20 +14,23 @@
     <div class="popup__box">
       <div class="popup">
         <div class="content">
-          <header>
+          <header class="header__popup">
             <h3>Add new Note</h3>
             <i class="bx bx-x"></i>
           </header>
           <form action="">
             <div class="row title">
               <label>Titulo</label>
-              <input type="text" placeholder="Titulo" />
+              <input type="text" placeholder="Titulo" id="title-input" />
             </div>
             <div class="row description">
               <label>Descripcion</label>
-              <textarea placeholder="Descripción"></textarea>
+              <textarea
+                placeholder="Descripción"
+                id="description-textarea"
+              ></textarea>
             </div>
-            <button>Add Note</button>
+            <button class="add__btn">Add Note</button>
           </form>
         </div>
       </div>
