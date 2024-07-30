@@ -64,6 +64,25 @@ body {
   justify-content: space-between;
 }
 
+.note .details p {
+  max-height: 130px;
+  overflow: auto;
+}
+
+.note .details p::-webkit-scrollbar {
+  width: 5px;
+}
+
+.note .details p::-webkit-scrollbar-thumb {
+  background: rgba(106, 146, 248, 0.5);
+  border-radius: 4px;
+}
+
+.note .details p::-webkit-scrollbar-track {
+  background: rgba(106, 146, 248, 0.3);
+  border-radius: 4px;
+}
+
 .details h3 {
   font-size: 1.3rem;
   font-weight: 600;
@@ -108,7 +127,7 @@ body {
   transition: transform 0.2s ease-in-out;
 }
 
-.settings:hover .menu {
+.settings.show .menu {
   transform: scale(1);
 }
 
@@ -189,9 +208,28 @@ body {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
 }
 
+.content form :where(input, textarea):focus {
+  box-shadow: 0 0 6px rgba(106, 146, 248, 0.5);
+  border-color: rgba(106, 146, 248, 0.5);
+}
+
 .description textarea {
   height: 150px;
   resize: none;
+}
+
+.description textarea::-webkit-scrollbar {
+  width: 5px;
+}
+
+.description textarea::-webkit-scrollbar-thumb {
+  background: rgba(106, 146, 248, 0.5);
+  border-radius: 4px;
+}
+
+.description textarea::-webkit-scrollbar-track {
+  background: rgba(106, 146, 248, 0.3);
+  border-radius: 4px;
 }
 
 .content form button {
