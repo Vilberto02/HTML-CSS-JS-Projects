@@ -52,6 +52,17 @@ function checkIsEmpty(input) {
   }
 }
 
+const allSekeleton = document.querySelectorAll(".skeleton");
+
+/*Se dispara cuando el documento HTML ha sido completamente cargado y analizado */
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    allSekeleton.forEach((item) => {
+      item.classList.remove("skeleton");
+    });
+  }, 2000); // 2 segundos de retraso
+});
+
 /*
 Forma de cambiar imagenes:
 
