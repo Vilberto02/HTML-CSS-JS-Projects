@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    135deg,
+    rgba(70, 26, 173, 1) 0%,
+    rgba(113, 140, 202, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 3.5rem;
+}
+
+.main header {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.main header span {
+  color: #fcf36b;
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  gap: 0.8rem;
+  border: none;
+  outline: none;
+}
+
+.form__container input {
+  padding: 0.6rem;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: 0.9rem;
+}
+
+.form__container label {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.form__container button {
+  background-color: #fcf36b;
+  color: black;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.info {
+  margin-top: 2.5rem;
+  width: 700px;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.info li:first-child {
+  list-style-type: none;
+}
