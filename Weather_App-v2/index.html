@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weatherio | Weather App</title>
+    <!--<meta name="title" content="weatherio" />
+    <meta name="description" content="weatherio is a weather app" />-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="assets/images/logo.png"
+            width="364"
+            height="58"
+            alt="logo"
+          />
+        </a>
+
+        <div class="search__view" data-search-view>
+          <div class="search__wrapper">
+            <input
+              type="search"
+              placeholder="Search city..."
+              name="search"
+              autocomplete="off"
+              data-search-field
+              class="search__field"
+            />
+            <span><i class="bx bx-search"></i></span>
+
+            <button
+              class="icon__btn leading__icon has__state"
+              aria-label="close"
+              data-search-toggler
+            >
+              <i class="bx bx-arrow-back"></i>
+            </button>
+          </div>
+
+          <div class="search__result" data-search-result>
+            <ul class="view__list" data-search-list>
+              <li class="view__item">
+                <i class="bx bxs-map"></i>
+
+                <div>
+                  <p class="item__title">London</p>
+                  <p class="label-2 item-subtitle">State of London, GB</p>
+                </div>
+
+                <a
+                  href="#"
+                  class="item__link has__state"
+                  data-search-toggler
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="header__actions">
+          <button
+            class="icon__btn has__state"
+            aria-label="open search"
+            data-search-toggler
+          >
+            <i class="bx bx-search"></i>
+          </button>
+
+          <a
+            href="#current-location"
+            class="btn__primary has__state"
+            data-current-location-btn
+          >
+            <i class="bx bx-current-location"></i>
+            <span class="span">Current Location</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <script type="module" src="assets/js/app.js"></script>
+    <script type="module" src="assets/js/route.js"></script>
+  </body>
+</html>

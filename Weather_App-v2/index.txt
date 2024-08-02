@@ -9,7 +9,7 @@ alt = logo
 
 placeholder = Search city...
 
-<span class="m-icon">search</span>
+<span class="m-icon">search</span> /*ICONO*/
 
 <span class="m-icon">arrow_back</span>
 
