@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #262a2f;
+}
+
+.container {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.2rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.container h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.container input {
+  padding: 0.9rem 0.6rem;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  border: 1px solid #494eea;
+  outline: none;
+}
+
+.container__qr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.8rem 0;
+  width: 200px;
+  max-height: 0;
+  display: none;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: max-height 1s;
+}
+
+.container__qr img {
+  width: 100%;
+  padding: 0.8rem;
+}
+
+.container__qr.show__img {
+  display: block;
+  max-height: 300px;
+  border: 1px solid #d1d1d1;
+  margin: 0.8rem auto;
+}
+
+.container button {
+  padding: 0.8rem 0.6rem;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #494eea;
+  color: #fff;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.5rem;
+}
+
+.error {
+  animation: shake 0.1s linear 10;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
