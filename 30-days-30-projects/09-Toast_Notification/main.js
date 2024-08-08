@@ -52,6 +52,11 @@ function createToast(type, icon, title, text) {
         <i class="bx bx-x" id="close"></i>
       </div>
   `;
+
   notificacionts.appendChild(newToast);
   newToast.timeOut = setTimeout(() => newToast.remove(), 5000);
+  const closeBtn = newToast.querySelector("#close");
+  closeBtn.addEventListener("click", () => {
+    newToast.remove();
+  });
 }

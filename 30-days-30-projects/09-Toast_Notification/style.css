@@ -12,12 +12,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #555;
+  background-color: #fff;
 }
 
 .notifications {
   position: fixed;
-  bottom: 100px;
+  bottom: 50px;
   right: 50px;
 }
 
