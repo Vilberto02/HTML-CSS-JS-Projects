@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music__player">
+        <nav class="navbar">
+          <div class="arrow__left">
+            <i class="bx bx-chevron-left"></i>
+          </div>
+          <div class="menu">
+            <i class="bx bx-menu"></i>
+          </div>
+        </nav>
+        <div class="img__container">
+          <img src="media/thumbail.jpg" alt="Thumbail music" class="bg__img" />
+        </div>
+        <div class="detail__song">
+          <h3>Pumped Up Kicks</h3>
+          <p>Foster The People</p>
+        </div>
+        <audio controls>
+          <source
+            src="media/Foster The People - Pumped Up Kicks.mp3"
+            type="audio/mp3"
+          />
+        </audio>
+        <input type="range" class="range__song" value="0" />
+        <div class="controls">
+          <div class="back">
+            <i class="bx bxs-chevrons-left"></i>
+          </div>
+          <div class="play">
+            <i class="bx bx-play"></i>
+          </div>
+          <div class="next">
+            <i class="bx bxs-chevrons-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
