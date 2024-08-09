@@ -154,3 +154,7 @@ html {
 .controls i:nth-child(2) {
   font-size: 5rem;
 }
+
+.song__duration span {
+  user-select: none;
+}
