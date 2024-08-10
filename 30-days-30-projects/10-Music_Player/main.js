@@ -71,31 +71,29 @@ function changeMusic(direction) {
   loadMusic(songs[musicIndex]);
   playMusic();
 }
-/*
+
 function formatTime(seconds) {
   const minutes = Math.floor(seconds / 60);
   const secs = Math.floor(seconds % 60);
   return `${String(minutes).padStart(2, "0")}:${String(secs).padStart(2, "0")}`;
-}*/
+}
 
 function updateProgressBar() {
   const { duration, currentTime } = music;
   const progressPercent = (currentTime / duration) * 100;
   progress.style.width = `${progressPercent}%`;
-
+  /*
   const formatTime = (time) => String(Math.floor(time)).padStart(2, "0");
 
   durationEl.textContent = `${formatTime(duration / 60)}:${formatTime(
     duration % 60
   )}`;
-  console.log(durationEl);
   currentTimeEl.textContent = `${formatTime(currentTime / 60)}:${formatTime(
     currentTime % 60
-  )}`;
-  console.log(durationEl);
-  /*
+  )}`;*/
+
   durationEl.textContent = formatTime(duration);
-  currentTimeEl.textContent = formatTime(currentTime);*/
+  currentTimeEl.textContent = formatTime(currentTime);
 }
 
 function setProgressBar(e) {
